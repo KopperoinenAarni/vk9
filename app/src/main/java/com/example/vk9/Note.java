@@ -6,13 +6,13 @@ import java.util.Calendar;
 public class Note {
 
     private static int idCounter = 0;
-    private int id;
+    private int Id;
     private String title;
     private String content;
     private String timeAndDate;
 
     public Note(String title, String content) {
-        this.id = ++idCounter;
+        this.Id = ++idCounter;
         this.title = title;
         this.content = content;
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm dd.MM.yyyy");
@@ -20,7 +20,7 @@ public class Note {
     }
 
     public int getId() {
-        return id;
+        return Id;
     }
     public String getTitle() {
         return title;
