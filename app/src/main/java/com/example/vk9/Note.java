@@ -15,8 +15,14 @@ public class Note {
         this.Id = ++idCounter;
         this.title = title;
         this.content = content;
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm dd.MM.yyyy");
-        this.timeAndDate = sdf.format(Calendar.getInstance().getTime());
+        Calendar calendar = Calendar.getInstance();
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute = calendar.get(Calendar.MINUTE);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+        int month = calendar.get(Calendar.MONTH) + 1;
+        int year = calendar.get(Calendar.YEAR);
+        String minuteStr = minute < 10 ? "0" + minute : String.valueOf(minute);
+        this.timeAndDate = hour + ":" + minuteStr + " " + day + "." + month + "." + year;
     }
 
     public int getId() {
