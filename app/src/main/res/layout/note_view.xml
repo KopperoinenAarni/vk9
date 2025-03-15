@@ -8,27 +8,27 @@
 
     <TextView
         android:id="@+id/NoteIdText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Muistiinpanon ID"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/NoteTimeAndDateText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Päivämäärä ja aika" />
 
     <TextView
         android:id="@+id/NoteTitleText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Otsikko"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/NoteContentText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sisältö" />
 
