@@ -24,4 +24,10 @@ public class ListNotesActivity extends AppCompatActivity {
         adapter = new NoteListAdapter(notes);
         recyclerView.setAdapter(adapter);
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        notes = NoteStorage.getInstance().getNotes();
+        adapter.notifyDataSetChanged();
+    }
 }

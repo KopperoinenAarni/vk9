@@ -32,11 +32,6 @@
         android:layout_height="wrap_content"
         android:text="Sisältö" />
 
-    <TextView
-        android:id="@+id/NoteTitleText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textStyle=""/>
+
 </LinearLayout>
 
