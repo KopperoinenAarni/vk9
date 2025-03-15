@@ -20,7 +20,7 @@
         android:text="Päivämäärä ja aika" />
 
     <TextView
-        android:id="@+id/txtNoteTitleText"
+        android:id="@+id/NoteTitleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Otsikko"

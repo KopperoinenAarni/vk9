@@ -12,7 +12,7 @@ public class NoteViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         NoteIdText = itemView.findViewById(R.id.txtNoteIdText);
         NoteTimeAndDateText = itemView.findViewById(R.id.txtNoteTimeAndDateText);
-        NoteTitleText = itemView.findViewById(R.id.txtNoteTitleText);
+        NoteTitleText = itemView.findViewById(R.id.NoteTitleText);
         NoteContentText = itemView.findViewById(R.id.txtNoteContentText);
     }
 }
